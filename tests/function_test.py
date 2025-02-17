@@ -1,6 +1,6 @@
 import unittest
 import numpy as np
-from main import abs_minus 
+from function import abs_minus 
 
 class TestAbsMinus(unittest.TestCase):
 
