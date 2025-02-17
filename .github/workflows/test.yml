@@ -27,5 +27,5 @@ jobs:
           pip install -r requirements.txt; fi
 
       - name: Run tests
-        run: pytest tests/*_test.py
+        run:  tests/*_test.py
 
