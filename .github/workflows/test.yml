@@ -29,4 +29,19 @@ jobs:
       - name: Run tests
         run: python -m unittest discover tests
 
+      - name: Debug Test Discovery
+        run: |
+          source venv/bin/activate
+          echo "Python Version:"
+          venv/bin/python --version
+          echo "Current Working Directory:"
+          pwd
+          echo "List of Files in Repository:"
+          ls -R
+          echo "List of Files in Tests Directory:"
+          ls -R tests
+          echo "Discovering Tests..."
+          venv/bin/python -m unittest discover -s tests -v
+
+
 
